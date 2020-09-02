@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Delivery') {
             steps {
-                sh 'aws s3 cp --recursive build s3://training.conygre.com/allstate/reactapp --region eu-west-1'
+                sh 'aws s3 cp --recursive build s3://react-test-nick --region eu-west-2'
             }
         }
         

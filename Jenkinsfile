@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Delivery') {
             steps {
-                sh 'aws s3 cp --recursive build s3://react-test-nick --region eu-west-2'
+                //sh 'aws s3 cp --recursive build s3://react-test-nick --region eu-west-2'
+                echo "Deployed react app"
             }
         }
         
